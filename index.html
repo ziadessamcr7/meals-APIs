@@ -1,0 +1,191 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/spin.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+
+    <section id="spinner">
+        <div class="lds-hourglass"></div>
+    </section>
+
+    <nav id="side-nav" class="d-flex"> 
+
+        <div class="inner-menu">
+            <header class="">
+                <p id="search">Search</p>
+                <p onclick="getCategory()">Categories</p>
+                <p onclick="getArea()">Area</p>
+                <p onclick="getIngredients()">Ingredients</p>
+                <p onclick="displayContactUs()">Contact Us</p>
+            </header>
+
+            <footer class="">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-brands fa-facebook"></i>
+                <i class="fa-solid fa-brands fa-twitter"></i>
+                <p>Copyright Â© 2023 All Rights Reserved.</p>
+            </footer>
+            
+        </div>
+        <div class="outter-nav d-flex flex-column justify-content-between align-items-center p-2">
+
+            <div class="logo">
+                <img src="imgs/logo.png" alt="" class="w-100">
+            </div>
+
+            <div class="x">
+              <span class="close"> <i class="fa-solid fa-x fs-3"></i> </span>  
+               <span class="open"> <i class="fa-solid fa-bars"></i> </span> 
+            </div>
+
+            <div class="icons text-center">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+        </div>
+        
+        
+    </nav>
+
+    <div class="search-inputs d-none">
+        <div class="container">
+            <div class="row g-2">
+
+                <div class="col-lg-6">
+                    <input onkeyup="getMealsBysearch(this.value)" type="text" class="form-control mt-3" placeholder="search meal by name" >
+                </div>
+
+                <div class="col-lg-6">
+                    <input maxlength="1"  onkeyup="getMealsBy1stLetter(this.value)" type="text" class="form-control mt-3" placeholder="search meal by 1st letter">
+                </div>
+
+            </div>
+        </div>
+       
+    </div>
+
+    <section id="all-meals">
+        <div class="container mt-5">
+            <div class="allMeals row g-3">
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="all-category">
+        <div class="container my-5">
+            <div class="allCategory row g-3">
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="all-countries">
+        <div class="container my-5">
+            <div class="allCountries row g-3">
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="all-ingredients">
+        <div class="container my-5">
+            <div class="allIngredients row g-3">
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="my-5">
+        <div class="contactUs container d-none">
+            <div class=" row g-3 justify-content-center ">
+
+                <div class="col-lg-5">
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+                <div class="col-lg-5">
+                    <input type="text" class="form-control" placeholder="Enter your email">
+                </div>
+                <div class="col-lg-5">
+                    <input type="text" class="form-control" placeholder="Enter your phone">
+                </div>
+                <div class="col-lg-5">
+                    <input type="text" class="form-control" placeholder="Enter your age">
+                </div>
+                <div class="col-lg-5">
+                    <input type="text" class="form-control" placeholder="Enter your password">
+                </div>
+                <div class="col-lg-5">
+                    <input type="text" class="form-control" placeholder="Repassword">
+                </div>
+            
+            </div>
+            <button class="btn btn-outline-danger m-auto d-block mt-3">submit</button>
+        </div>
+    </section>
+
+    <section id="info" class="bg-warning d-none">
+        <div class="container text-white">
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div>
+                        <img src="imgs/lewa.jpg" alt="" id="info-img" class="w-100">
+                        <h2 class="infoName" >lewa</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <h2>Instructions</h2>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam porro dignissimos asperiores, incidunt culpa et facere quisquam! Fugiat, veniam sequi asperiores cumque, nam quae reiciendis ipsum qui repellat rerum at, voluptates incidunt. Necessitatibus dolore delectus alias commodi unde eveniet excepturi non, officiis cupiditate, sunt sequi placeat neque animi praesentium. Laudantium optio quidem natus quaerat illo laborum nostrum deleniti eius, et perferendis eos minima amet tempore quasi excepturi accusamus non fugit. Deleniti distinctio obcaecati inventore? Ullam ad totam ratione cupiditate pariatur, sed incidunt explicabo sit, natus maxime tempore itaque aliquam nulla rerum dolorum quaerat minus? Reprehenderit dicta et voluptas quisquam at?</p>
+                    <h3 >Area : <span class="areaName"> turkish </span> </h3> 
+                        
+                    <h3 >category :<span class="category"> side </span></h3> 
+                        
+                    <h3 >rescipies: 
+                        <span class="rescipies"> salt  </span>
+                        <span class="rescipies"> pepper </span>
+                        <span class="rescipies"> water </span> 
+                    </h3>
+                    <h3>tags :</h3>
+                    <button class="btn btn-success">search</button>
+                    <a href="" class="btn btn-danger videoBtn" target="_blank"> youtube</a>
+                       
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="mealsCaregory row g-3">
+
+            </div>
+        </div>
+    </section>
+  
+
+
+
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
