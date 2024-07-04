@@ -1,8 +1,8 @@
-body{
+body {
     background-color: black;
 }
 
-#spinner{
+#spinner {
     background-color: #000;
     width: 100%;
     height: 100%;
@@ -17,16 +17,16 @@ body{
     justify-content: center;
 }
 
-#side-nav{
+#side-nav {
     position: fixed;
     top: 0;
     z-index: 555555;
 }
 
-.inner-menu{
+.inner-menu {
     width: 280px;
     height: 100vh;
-    background: black; 
+    background: black;
     flex-direction: column;
     justify-content: space-between;
     color: white;
@@ -34,31 +34,36 @@ body{
     display: none;
 }
 
-.inner-menu header p{
+.inner-menu header p {
     cursor: pointer;
 }
 
-.fa-x{
+.fa-x {
     cursor: pointer;
     display: none;
 }
-.fa-bars{
+
+.fa-bars {
     font-size: 30px;
     cursor: pointer;
 }
-.outter-nav{
+
+.outter-nav {
     width: 65px;
     height: 100vh;
     background-color: white;
 }
 
+.logo {
+    cursor: pointer;
+}
 
 article {
     position: relative;
     overflow: hidden;
 }
 
-.white-layer{
+.white-layer {
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     width: 100%;
@@ -71,7 +76,7 @@ article {
     padding-left: 10px;
 }
 
-article:hover .white-layer{
+article:hover .white-layer {
     top: 0;
 }
 
@@ -84,4 +89,3 @@ article:hover .white-layer{
     font-weight: 400;
     margin-right: 10px;
 }
-
